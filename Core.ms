@@ -11,7 +11,7 @@ rollout EfficiencyTools  "EfficiencyTools"
 			
 			maxOps.cloneNodes item  cloneType:#reference newNodes:&newItem
 			
-			newItem.rotation = quat -rot.x rot.y -rot.z rot.w
+			newItem.rotation = quat -rot.x rot.y rot.z rot.w
 			newItem.pos = [-pos.x,pos.y,pos.z]
 			
 			addmodifier newItem (mirror mirror_axis:0)
@@ -28,7 +28,7 @@ rollout EfficiencyTools  "EfficiencyTools"
 			
 			maxOps.cloneNodes item  cloneType:#reference newNodes:&newItem
 			
-			newItem.rotation = quat rot.x -rot.y -rot.z rot.w
+			newItem.rotation = quat rot.x -rot.y rot.z rot.w
 			newItem.pos = [pos.x,-pos.y,pos.z]
 			
 			addmodifier newItem (mirror mirror_axis:1)
